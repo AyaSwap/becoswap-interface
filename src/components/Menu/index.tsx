@@ -8,7 +8,7 @@ import useGetLocalProfile from 'hooks/useGetLocalProfile'
 import useAuth from 'hooks/useAuth'
 import { languageList } from 'constants/localization/languages'
 import links from './config'
-import { BECO } from '../../constants'
+import { DEKO } from '../../constants'
 
 const Menu: React.FC = (props) => {
   const { account } = useWeb3React()
@@ -16,7 +16,7 @@ const Menu: React.FC = (props) => {
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
   const priceData = useGetPriceData()
-  const cakePriceUsd = priceData ? Number(priceData.data[BECO.address].price) : undefined
+  const cakePriceUsd = priceData ? Number(priceData.data[DEKO.address].price) : undefined
   const profile = useGetLocalProfile()
 
   return (
