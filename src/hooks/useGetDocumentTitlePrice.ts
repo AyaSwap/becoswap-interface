@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
 import useGetPriceData from './useGetPriceData'
-import { BECO } from '../constants'
+import { DEKO } from '../constants'
 
 const useGetDocumentTitlePrice = () => {
   const priceData = useGetPriceData()
 
-  const cakePriceUsd = priceData ? parseFloat(priceData.data[BECO.address].price) : 0
+  const cakePriceUsd = priceData ? parseFloat(priceData.data[DEKO.address].price) : 0
 
   const cakePriceUsdString =
     Number.isNaN(cakePriceUsd) || cakePriceUsd === 0
@@ -16,7 +16,7 @@ const useGetDocumentTitlePrice = () => {
         })}`
 
   useEffect(() => {
-    document.title = `BecoSwap${cakePriceUsdString}`
+    document.title = `DekoSwap${cakePriceUsdString}`
   }, [cakePriceUsdString])
 }
 export default useGetDocumentTitlePrice
