@@ -11,13 +11,14 @@
   "keywords": ["becoswap", "default"],
   "tokens": [
     {
-      "name": "Beco Token",
-      "symbol": "BECO",
-      "address": "0x8fe4d28476cdd43d36a12eb47dc3243c1925f263",
+      "name": "Deko Finance Token",
+      "symbol": "DEKO",
+      "address": "0x648259243f8a060c38b20dc16214cf0f928f49f1",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "https://exchange.becoswap.com/images/coins/0x8fe4d28476cdd43d36a12eb47dc3243c1925f263.png"
+      "logoURI": "https://dekofinance.live/images/pools/deko-deko.svg"
     },
+   
     {
       "name": "WBNB Token",
       "symbol": "WBNB",
@@ -74,14 +75,7 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://exchange.becoswap.com/images/coins/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82.png"
-    }
-    {
-      "name": "Deko Finance Token",
-      "symbol": "DEKO",
-      "address": "0x648259243f8a060c38b20dc16214cf0f928f49f1",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://dekofinance.live/images/cake.svg"
-    }
+    },
+    
   ]
 }
